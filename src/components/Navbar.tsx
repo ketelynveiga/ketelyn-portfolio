@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+  { href: "#inicio", label: "Início" },
   { href: "#sobre", label: "Sobre" },
-  { href: "#experiencia", label: "Experiência" },
-  { href: "#formacao", label: "Formação" },
+  { href: "#experiencia", label: "Timeline" },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -45,14 +45,14 @@ export const Navbar = () => {
       <nav className="container-custom flex items-center justify-between">
         <motion.a
           href="#"
-          className="font-display text-xl md:text-2xl font-semibold text-foreground"
+          className="font-body text-lg md:text-xl font-semibold text-foreground tracking-tight"
           whileHover={{ scale: 1.02 }}
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Kételyn<span className="text-primary">.</span>
+          KV<span className="text-primary">.</span>Portfolio
         </motion.a>
 
         {/* Desktop Navigation */}
