@@ -1,28 +1,26 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Database, BarChart3, Workflow, Users } from "lucide-react";
+import { Target, Search, Users } from "lucide-react";
 
 const skills = [
   {
-    icon: Database,
-    title: "Integrações",
-    description: "APIs REST, ERPs, Open Finance",
+    icon: Target,
+    title: "Produtos de alta confiabilidade",
+    description:
+      "Construo produtos onde regras de negócio, dados e confiabilidade são centrais para o sucesso da operação financeira.",
   },
   {
-    icon: BarChart3,
-    title: "Dados",
-    description: "Métricas, KPIs, Analytics",
-  },
-  {
-    icon: Workflow,
-    title: "Automação",
-    description: "Processos, Cobranças, Financeiro",
+    icon: Search,
+    title: "Discovery contínuo",
+    description:
+      "Conduzo processos de discovery e priorização orientada por métricas, evidências e impacto de negócio.",
   },
   {
     icon: Users,
-    title: "Gestão",
-    description: "Produto, Backlog, Stakeholders",
+    title: "Alinhamento de stakeholders",
+    description:
+      "Alinhar stakeholders, times técnicos e liderança com clareza e comunicação assertiva.",
   },
 ];
 
@@ -31,74 +29,74 @@ export const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="section-padding bg-background" ref={ref}>
+    <section id="sobre" className="section-padding bg-section-alt" ref={ref}>
       <div className="container-custom">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="text-center mb-16"
         >
-          <h2 className="section-title text-foreground">
-            Sobre <span className="text-gradient">Mim</span>
-          </h2>
-          <p className="section-subtitle mx-auto mt-6">
-            Profissional apaixonada por transformar ideias em produtos digitais de impacto.
-          </p>
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            className="inline-block mb-6"
+          >
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
+              What I Do
+            </span>
+          </motion.div>
+
+          {/* Title */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-foreground italic mb-6"
+          >
+            O que eu faço
+          </motion.h2>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+          >
+            Trabalho na interseção entre dados, integrações e experiência humana, com foco em decisões baseadas em evidência e impacto concreto.
+          </motion.p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* About Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              Sou Product Manager com sólida atuação em{" "}
-              <span className="highlight-text">produtos financeiros</span>,
-              automação de contas a receber, meios de pagamento e integrações
-              técnicas. Trabalho em parceria com liderança executiva, engenharia,
-              design e stakeholders de negócio para construir produtos escaláveis,
-              orientados a dados e impacto mensurável.
-            </p>
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              Tenho forte experiência em{" "}
-              <span className="highlight-text">discovery</span>, priorização
-              estratégica, gestão de backlog, métricas de produto e integração com
-              ERPs, APIs e soluções financeiras. Atuo com visão sistêmica, foco em
-              eficiência operacional e melhoria contínua da experiência do usuário.
-            </p>
-          </motion.div>
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+              className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+            >
+              {/* Icon */}
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                <skill.icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
+              </div>
 
-          {/* Skills Grid */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="grid grid-cols-2 gap-4"
-          >
-            {skills.map((skill, index) => (
-              <motion.div
-                key={skill.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="card-experience text-center p-6"
-              >
-                <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <skill.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-1">
-                  {skill.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {skill.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-foreground mb-3 font-body">
+                {skill.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-muted-foreground leading-relaxed">
+                {skill.description}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
