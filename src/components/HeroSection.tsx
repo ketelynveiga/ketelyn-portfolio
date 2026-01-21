@@ -58,7 +58,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
             >
-              Sou a Kételyn Veiga, Product Manager com atuação em produtos B2B e B2C, conectando negócio, tecnologia e dados para criar soluções escaláveis e mensuráveis.
+              Sou Kételyn Veiga, Product Manager com atuação em produtos digitais B2B e B2C, conectando negócio, tecnologia e dados para criar soluções claras, escaláveis e mensuráveis.
             </motion.p>
 
             {/* Action Buttons */}
