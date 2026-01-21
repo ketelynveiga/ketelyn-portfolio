@@ -167,6 +167,60 @@ const experiences = [
       },
     },
   },
+  {
+    company: "LECOM",
+    role: "Analista de Negócios",
+    shortDescription:
+      "automação de processos, integrações e sistemas financeiros B2B",
+    tabs: {
+      contexto: {
+        title: "Problema de negócio",
+        content:
+          "Empresas enfrentavam processos manuais e fragmentados, com necessidade de automação de workflows, integrações entre sistemas e padronização de fluxos financeiros para ganhar eficiência operacional.",
+        users: [
+          "Gestores de operações e processos",
+          "Times de TI e desenvolvimento",
+          "Áreas financeiras e de compliance",
+        ],
+      },
+      papel: {
+        title: "Meu papel",
+        items: [
+          "Levantamento e documentação de requisitos funcionais para automação de processos e workflows usando BPMN",
+          "Desenvolvimento de protótipos no Figma e validações com usuários-chave",
+          "Tradução de demandas de negócio em soluções funcionais viáveis",
+          "Alinhamentos frequentes com stakeholders para reduzir retrabalho",
+        ],
+      },
+      processo: {
+        title: "Processo",
+        items: [
+          "Análises exploratórias em banco de dados para apoiar iniciativas de automação",
+          "Estruturação de documentação funcional detalhada",
+          "Apoio em processos de homologação e testes com usuários e equipe de desenvolvimento",
+          "Orientações técnicas para customizações via JavaScript",
+        ],
+      },
+      entregaveis: {
+        title: "Entregáveis",
+        items: [
+          "Documentação funcional estruturada e relatórios visuais",
+          "Protótipos validados no Figma",
+          "Fluxos e regras de negócio para sistemas financeiros",
+          "Análises de sistemas e propostas de melhorias",
+        ],
+      },
+      resultados: {
+        title: "Resultados",
+        items: [
+          "Redução de tempo operacional com automações de processos internos",
+          "Padronização de fluxos e melhoria da previsibilidade das entregas",
+          "Maior eficiência por meio de documentação clara e alinhamento contínuo",
+          "Interoperabilidade entre plataformas com boas práticas de APIs e integrações",
+        ],
+      },
+    },
+  },
 ];
 
 interface ExperienceCardProps {
