@@ -168,8 +168,8 @@ const experiences = [
     },
   },
   {
-    company: "LECOM",
-    role: "Analista de Negócios",
+    company: "ZEEV",
+    role: "Especialista Low Code",
     shortDescription:
       "automação de processos, integrações e sistemas financeiros B2B",
     tabs: {
