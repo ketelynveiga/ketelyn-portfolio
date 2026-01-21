@@ -349,7 +349,7 @@ export const ExperienceSection = () => {
   return (
     <section
       id="experiencia"
-      className="section-padding bg-section-alt"
+      className="section-padding bg-background"
       ref={ref}
     >
       <div className="container-custom">
