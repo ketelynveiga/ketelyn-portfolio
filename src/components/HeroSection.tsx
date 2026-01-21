@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/ketelyn-profile.jpg";
 
@@ -12,15 +12,14 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen hero-gradient flex items-center relative overflow-hidden">
-      {/* Background decoration */}
+    <section className="min-h-screen bg-background flex items-center relative overflow-hidden">
+      {/* Subtle background gradient */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -left-32 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent" />
       </div>
 
-      <div className="container-custom relative z-10 py-32 md:py-40">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="container-custom relative z-10 py-24 md:py-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -28,130 +27,117 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="order-2 lg:order-1"
           >
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="text-primary font-medium mb-4 tracking-wide"
+              className="inline-block mb-8"
             >
-              Product Manager
-            </motion.p>
+              <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
+                Product Manager
+              </span>
+            </motion.div>
 
+            {/* Main Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-foreground leading-tight mb-6"
+              className="text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-foreground leading-[1.1] mb-6"
             >
-              Kételyn{" "}
-              <span className="text-gradient">Veiga</span>
+              Transformando{" "}
+              <span className="text-gradient">dados e integrações</span>{" "}
+              em produtos financeiros
             </motion.h1>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-xl md:text-2xl text-foreground/80 font-display font-medium mb-6"
-            >
-              Foco em dados, integrações e produtos financeiros escaláveis
-            </motion.h2>
-
+            {/* Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-xl"
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
             >
-              Product Manager com experiência em produtos B2B e B2C, atuando na definição de estratégia, roadmap e execução de soluções digitais orientadas a métricas, eficiência operacional e valor de negócio.
+              Sou a Kételyn Veiga, Product Manager com atuação em produtos B2B e B2C, conectando negócio, tecnologia e dados para criar soluções escaláveis e mensuráveis.
             </motion.p>
 
+            {/* Action Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <Button
-                variant="hero"
-                size="lg"
-                onClick={() => scrollToSection("#experiencia")}
-              >
-                Ver Experiência
-              </Button>
-              <Button
-                variant="heroOutline"
-                size="lg"
-                onClick={() => scrollToSection("#contato")}
-              >
-                Entrar em Contato
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
-              className="flex items-center gap-4 mt-8"
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="flex flex-wrap gap-4"
             >
               <a
                 href="https://www.linkedin.com/in/ketelynveiga/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="LinkedIn"
               >
-                <Linkedin size={22} />
+                <Button variant="hero" size="lg" className="gap-2">
+                  <Linkedin size={18} />
+                  LinkedIn
+                </Button>
               </a>
-              <a
-                href="mailto:ketelynmveiga@gmail.com"
-                className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Email"
+              <a href="mailto:ketelynmveiga@gmail.com">
+                <Button variant="heroOutline" size="lg" className="gap-2">
+                  <Mail size={18} />
+                  Email
+                </Button>
+              </a>
+              <Button
+                variant="heroOutline"
+                size="lg"
+                className="gap-2"
+                onClick={() => scrollToSection("#experiencia")}
               >
-                <Mail size={22} />
-              </a>
+                <FileText size={18} />
+                Currículo
+              </Button>
+            </motion.div>
+
+            {/* Scroll indicator */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+              className="mt-16"
+            >
+              <button
+                onClick={() => scrollToSection("#sobre")}
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <span className="text-sm font-medium">Saiba mais</span>
+                <motion.span
+                  animate={{ y: [0, 4, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  <ArrowDown size={16} />
+                </motion.span>
+              </button>
             </motion.div>
           </motion.div>
 
           {/* Profile Image */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.7, ease: "easeOut" }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-card ring-4 ring-background">
+              {/* Background shape */}
+              <div className="absolute inset-0 bg-primary/10 rounded-[2rem] transform rotate-3 scale-105" />
+              <div className="relative w-72 h-80 md:w-80 md:h-[22rem] lg:w-96 lg:h-[26rem] rounded-[2rem] overflow-hidden bg-muted">
                 <img
                   src={profileImage}
                   alt="Kételyn Veiga - Product Manager"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-primary/10 rounded-full blur-xl" />
             </div>
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.button
-          onClick={() => scrollToSection("#sobre")}
-          className="text-muted-foreground hover:text-primary transition-colors"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          aria-label="Scroll to content"
-        >
-          <ArrowDown size={24} />
-        </motion.button>
-      </motion.div>
     </section>
   );
 };
