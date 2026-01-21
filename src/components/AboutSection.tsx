@@ -88,7 +88,7 @@ export const AboutSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-foreground italic mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-6"
           >
             O que eu faço
           </motion.h2>
