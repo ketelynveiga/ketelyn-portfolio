@@ -65,7 +65,6 @@ const experiences = [
           "Maior previsibilidade de fluxo de caixa para clientes",
           "Padronização e confiabilidade das integrações com ERPs",
           "Evolução do produto como plataforma centralizadora de cobranças",
-          "Base sólida para escala do produto via Open Finance",
         ],
       },
     },
