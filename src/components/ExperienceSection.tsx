@@ -14,47 +14,58 @@ const experiences = [
       contexto: {
         title: "Problema de negócio",
         content:
-          "A gestão de contas a receber em PMEs envolve processos manuais, dados fragmentados entre ERPs, planilhas e bancos, gerando ineficiência, erros e aumento da inadimplência.",
+          "Empresas, com forte atuação contábil, enfrentavam dificuldades na gestão de contas a receber de seus clientes devido a processos manuais e dados fragmentados entre ERPs, planilhas e bancos. Esse cenário gerava baixa visibilidade financeira, retrabalho operacional e dificuldade de escalar a operação de cobrança.",
         users: [
-          "Gestores financeiros de PMEs",
-          "Times de cobrança e operações",
+          "Escritórios de contabilidade",
+          "Contadores e analistas financeiros",
+          "Times de cobrança e operações financeiras",
           "Áreas de controladoria e planejamento",
+        ],
+        restrictions: [
+          "Dependência de integrações com ERPs e instituições financeiras",
+          "Diferentes níveis de maturidade tecnológica dos clientes",
+          "Necessidade de alta confiabilidade e consistência de dados",
+          "Ambiente regulado (Open Finance)",
         ],
       },
       papel: {
         title: "Meu papel",
         items: [
           "Definição e priorização de roadmap orientado a impacto de negócio e métricas",
-          "Liderança de integrações via API com ERPs como Omie e Conta Azul",
-          "Trabalho direto com CPTO e CEO na evolução estratégica do produto",
+          "Liderança de integrações via API com ERPs (ex.: Omie, Conta Azul) e Open Finance",
+          "Atuação direta com CPTO e CEO na evolução estratégica do produto",
           "Coordenação de times multidisciplinares (engenharia, design e negócio)",
+          "Tradução de necessidades financeiras complexas em soluções escaláveis e confiáveis",
         ],
       },
       processo: {
         title: "Processo",
         items: [
-          "Discovery contínuo com entrevistas e análise de dados",
-          "Priorização por impacto e esforço técnico",
-          "Documentação clara com PRDs e critérios de aceitação",
-          "Acompanhamento de métricas e iteração rápida",
+          "Discovery contínuo com entrevistas, análise de dados e feedbacks de clientes",
+          "Priorização baseada em impacto de negócio, esforço técnico e risco operacional",
+          "Definição clara de escopo por meio de PRDs e critérios de aceitação",
+          "Colaboração próxima com engenharia para decisões técnicas e de integração",
+          "Acompanhamento de métricas e iteração rápida após entregas",
         ],
       },
       entregaveis: {
         title: "Entregáveis",
         items: [
-          "Integrações com ERPs (Omie, Conta Azul)",
-          "Automação de cobranças e conciliações",
-          "Dashboards de monitoramento de KPIs",
-          "Documentação técnica e de produto",
+          "Roadmap de produto priorizado e orientado a resultados",
+          "PRDs claros, com critérios de aceitação e fluxos de integração",
+          "Especificações funcionais para automação de cobranças e conciliação",
+          "Fluxos de integração com ERPs e instituições financeiras",
+          "Dashboards de acompanhamento de métricas operacionais e de negócio",
         ],
       },
       resultados: {
         title: "Resultados",
         items: [
-          "Até 40% de redução da inadimplência para clientes",
-          "Aumento da qualidade e confiabilidade dos dados",
-          "Redução do tempo de onboarding de novos clientes",
-          "Maior visibilidade e controle financeiro para gestores",
+          "Redução de processos manuais na gestão de contas a receber",
+          "Maior previsibilidade de fluxo de caixa para clientes",
+          "Padronização e confiabilidade das integrações com ERPs",
+          "Evolução do produto como plataforma centralizadora de cobranças",
+          "Base sólida para escala do produto via Open Finance",
         ],
       },
     },
@@ -316,9 +327,9 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
             </TabsList>
 
             <TabsContent value="contexto" className="mt-0">
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-foreground flex items-center gap-2 mb-2">
+                  <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
                     <span className="w-2 h-2 rounded-full bg-primary" />
                     {experience.tabs.contexto.title}
                   </h4>
@@ -327,11 +338,11 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground flex items-center gap-2 mb-2">
+                  <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
                     <span className="w-2 h-2 rounded-full bg-primary" />
                     Usuários impactados
                   </h4>
-                  <ul className="space-y-1">
+                  <ul className="space-y-2">
                     {experience.tabs.contexto.users.map((user, i) => (
                       <li key={i} className="text-muted-foreground flex items-center gap-2">
                         <span className="w-1 h-1 rounded-full bg-muted-foreground" />
@@ -340,6 +351,22 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
                     ))}
                   </ul>
                 </div>
+                {experience.tabs.contexto.restrictions && (
+                  <div>
+                    <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      Restrições
+                    </h4>
+                    <ul className="space-y-2">
+                      {experience.tabs.contexto.restrictions.map((restriction, i) => (
+                        <li key={i} className="text-muted-foreground flex items-center gap-2">
+                          <span className="w-1 h-1 rounded-full bg-muted-foreground" />
+                          {restriction}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </TabsContent>
 
