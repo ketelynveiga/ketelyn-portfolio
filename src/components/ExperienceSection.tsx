@@ -25,7 +25,6 @@ const experiences = [
           "Dependência de integrações com ERPs e instituições financeiras",
           "Diferentes níveis de maturidade tecnológica dos clientes",
           "Necessidade de alta confiabilidade e consistência de dados",
-          "Ambiente regulado (Open Finance)",
         ],
       },
       papel: {
