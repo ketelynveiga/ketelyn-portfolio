@@ -124,19 +124,12 @@ export const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
-            <div className="relative">
-              {/* Subtle shadow for depth */}
-              <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-muted/30 rounded-xl transform translate-x-3 translate-y-3" />
-              {/* Image container - increased size ~15%, reduced border radius, neutral background */}
-              <div className="relative w-80 h-[22rem] md:w-[22rem] md:h-[26rem] lg:w-[26rem] lg:h-[30rem] rounded-xl overflow-hidden bg-muted/40">
-                <img
-                  src={profileImage}
-                  alt="Kételyn Veiga - Product Manager"
-                  className="w-full h-full object-cover object-[center_15%] grayscale-[10%] contrast-[0.95] brightness-[1.02]"
-                />
-                {/* Subtle overlay for uniform lighting effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/5 via-transparent to-background/5 pointer-events-none" />
-              </div>
+            <div className="relative w-80 h-[22rem] md:w-[22rem] md:h-[26rem] lg:w-[26rem] lg:h-[30rem] rounded-xl overflow-hidden">
+              <img
+                src={profileImage}
+                alt="Kételyn Veiga - Product Manager"
+                className="w-full h-full object-cover object-[center_15%] grayscale-[10%] contrast-[0.95] brightness-[1.02]"
+              />
             </div>
           </motion.div>
         </div>
