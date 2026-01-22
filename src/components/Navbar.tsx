@@ -55,6 +55,15 @@ export const Navbar = () => {
               </button>
             </li>
           ))}
+          <li>
+            <Button
+              variant="hero"
+              size="sm"
+              onClick={() => scrollToSection("#contato")}
+            >
+              Fale Comigo
+            </Button>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
