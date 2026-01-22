@@ -128,7 +128,7 @@ export const HeroSection = () => {
               {/* Subtle shadow for depth */}
               <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-muted/30 rounded-xl transform translate-x-3 translate-y-3" />
               {/* Image container - increased size ~15%, reduced border radius, neutral background */}
-              <div className="relative w-80 h-[22rem] md:w-[22rem] md:h-[26rem] lg:w-[26rem] lg:h-[30rem] rounded-xl overflow-hidden bg-muted/40 border border-border/30 shadow-sm">
+              <div className="relative w-80 h-[22rem] md:w-[22rem] md:h-[26rem] lg:w-[26rem] lg:h-[30rem] rounded-xl overflow-hidden bg-muted/40">
                 <img
                   src={profileImage}
                   alt="Kételyn Veiga - Product Manager"
