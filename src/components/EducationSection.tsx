@@ -10,7 +10,6 @@ const education = {
 
 const certifications = [
   { name: "Product Manager", institution: "PM3" },
-  { name: "Product Growth", institution: "PM3" },
   { name: "AI Product Specialist", institution: "PM3" },
 ];
 
