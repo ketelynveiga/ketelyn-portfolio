@@ -75,12 +75,13 @@ export const ContactSection = () => {
             );
 
             if (item.href) {
+              const opensNewTab = item.label === "LinkedIn" || item.label === "WhatsApp";
               return (
                 <a
                   key={item.label}
                   href={item.href}
-                  target={item.label === "LinkedIn" ? "_blank" : undefined}
-                  rel={item.label === "LinkedIn" ? "noopener noreferrer" : undefined}
+                  target={opensNewTab ? "_blank" : undefined}
+                  rel={opensNewTab ? "noopener noreferrer" : undefined}
                   className="block"
                 >
                   {content}
