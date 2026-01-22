@@ -56,13 +56,15 @@ export const Navbar = () => {
             </li>
           ))}
           <li>
-            <Button
-              variant="hero"
-              size="sm"
-              onClick={() => scrollToSection("#contato")}
+            <a
+              href="https://wa.me/5522997657347"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Fale Comigo
-            </Button>
+              <Button variant="hero" size="sm">
+                Fale Comigo
+              </Button>
+            </a>
           </li>
         </ul>
 
