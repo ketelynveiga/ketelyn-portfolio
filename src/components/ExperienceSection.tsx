@@ -237,7 +237,7 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.1 * index }}
-      className="rounded-2xl overflow-hidden"
+      className="rounded-2xl overflow-hidden border border-border/50"
     >
       {/* Header - Always visible */}
       <button
@@ -245,31 +245,29 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
         className="w-full bg-primary/10 p-6 md:p-8 flex items-center gap-4 md:gap-6 text-left hover:bg-primary/15 transition-colors"
       >
         {/* Icon */}
-        <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-card flex items-center justify-center flex-shrink-0 shadow-soft">
+        <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-card flex items-center justify-center flex-shrink-0 shadow-sm border border-border/30">
           <Building2 className="w-7 h-7 md:w-8 md:h-8 text-primary" strokeWidth={1.5} />
         </div>
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <span className="inline-flex items-center px-3 py-1 rounded-full bg-card text-primary font-medium text-xs border border-primary/20 mb-2">
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-card text-primary font-medium text-xs border border-primary/30 mb-2">
             {experience.role}
           </span>
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground">
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground tracking-wide uppercase">
             {experience.company}
           </h3>
-          <p className="text-muted-foreground text-sm md:text-base mt-1 truncate">
+          <p className="text-muted-foreground text-sm md:text-base mt-1">
             {experience.shortDescription}
           </p>
         </div>
 
         {/* Chevron */}
-        <div className="w-10 h-10 rounded-full bg-card flex items-center justify-center flex-shrink-0 shadow-soft">
-          <ChevronDown
-            className={`w-5 h-5 text-foreground transition-transform duration-300 ${
-              isOpen ? "rotate-180" : ""
-            }`}
-          />
-        </div>
+        <ChevronDown
+          className={`w-6 h-6 text-muted-foreground transition-transform duration-300 flex-shrink-0 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
       </button>
 
       {/* Expandable Content */}
@@ -280,24 +278,39 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
           opacity: isOpen ? 1 : 0,
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="overflow-hidden bg-primary/10"
+        className="overflow-hidden bg-card"
       >
-        <div className="p-6 md:p-8 pt-0">
+        <div className="p-6 md:p-8 border-t border-border/30">
           <Tabs defaultValue="contexto" className="w-full">
-            <TabsList className="w-full justify-start bg-card/50 rounded-xl p-1 mb-6 flex-wrap h-auto gap-1">
-              <TabsTrigger value="contexto" className="rounded-lg data-[state=active]:bg-card data-[state=active]:shadow-soft">
+            <TabsList className="w-full justify-start bg-muted/30 rounded-none p-0 mb-8 h-auto border-b border-border/30">
+              <TabsTrigger 
+                value="contexto" 
+                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-muted-foreground data-[state=active]:text-foreground"
+              >
                 Contexto
               </TabsTrigger>
-              <TabsTrigger value="papel" className="rounded-lg data-[state=active]:bg-card data-[state=active]:shadow-soft">
+              <TabsTrigger 
+                value="papel" 
+                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-muted-foreground data-[state=active]:text-foreground"
+              >
                 Meu Papel
               </TabsTrigger>
-              <TabsTrigger value="processo" className="rounded-lg data-[state=active]:bg-card data-[state=active]:shadow-soft">
+              <TabsTrigger 
+                value="processo" 
+                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-muted-foreground data-[state=active]:text-foreground"
+              >
                 Processo
               </TabsTrigger>
-              <TabsTrigger value="entregaveis" className="rounded-lg data-[state=active]:bg-card data-[state=active]:shadow-soft">
+              <TabsTrigger 
+                value="entregaveis" 
+                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-muted-foreground data-[state=active]:text-foreground"
+              >
                 Entregáveis
               </TabsTrigger>
-              <TabsTrigger value="resultados" className="rounded-lg data-[state=active]:bg-card data-[state=active]:shadow-soft">
+              <TabsTrigger 
+                value="resultados" 
+                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-6 py-3 text-muted-foreground data-[state=active]:text-foreground"
+              >
                 Resultados
               </TabsTrigger>
             </TabsList>
