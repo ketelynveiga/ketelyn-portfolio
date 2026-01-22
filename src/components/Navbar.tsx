@@ -42,19 +42,7 @@ export const Navbar = () => {
           : "bg-transparent py-5"
       }`}
     >
-      <nav className="container-custom flex items-center justify-between">
-        <motion.a
-          href="#"
-          className="font-body text-lg md:text-xl font-semibold text-foreground tracking-tight"
-          whileHover={{ scale: 1.02 }}
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          KV<span className="text-primary">.</span>Portfolio
-        </motion.a>
-
+      <nav className="container-custom flex items-center justify-center">
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -67,15 +55,6 @@ export const Navbar = () => {
               </button>
             </li>
           ))}
-          <li>
-            <Button
-              variant="hero"
-              size="sm"
-              onClick={() => scrollToSection("#contato")}
-            >
-              Fale Comigo
-            </Button>
-          </li>
         </ul>
 
         {/* Mobile Menu Button */}
