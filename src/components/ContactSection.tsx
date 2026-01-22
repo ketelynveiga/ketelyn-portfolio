@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, MapPin } from "lucide-react";
+import { Mail, Linkedin, MapPin, MessageCircle } from "lucide-react";
 
 const contactInfo = [
   {
@@ -15,6 +15,12 @@ const contactInfo = [
     label: "LinkedIn",
     value: "/in/ketelynveiga",
     href: "https://www.linkedin.com/in/ketelynveiga/",
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "+55 22 99765-7347",
+    href: "https://wa.me/5522997657347",
   },
   {
     icon: MapPin,
