@@ -25,7 +25,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="order-2"
+            className="order-1"
           >
             {/* Badge */}
             <motion.div
@@ -127,7 +127,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
-            className="order-1 flex justify-center lg:justify-end"
+            className="order-2 flex justify-center lg:justify-end"
           >
             <div className="relative flex items-start justify-center h-full">
               <img
