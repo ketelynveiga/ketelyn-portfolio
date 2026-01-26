@@ -133,7 +133,7 @@ export const HeroSection = () => {
               <img
                 src={profileImage}
                 alt="Kételyn Veiga - Product Manager"
-                className="w-auto max-w-full h-auto rounded-2xl object-contain grayscale-[10%] contrast-[0.95] brightness-[1.02]"
+                className="w-auto max-w-[280px] md:max-w-[380px] lg:max-w-full h-auto max-h-[350px] md:max-h-[450px] lg:max-h-none rounded-2xl object-contain grayscale-[10%] contrast-[0.95] brightness-[1.02]"
               />
             </div>
           </motion.div>
