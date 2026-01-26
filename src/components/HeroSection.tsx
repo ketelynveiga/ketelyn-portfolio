@@ -66,7 +66,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="flex flex-wrap gap-4"
+              className="flex items-center gap-4"
             >
               <a
                 href="https://www.linkedin.com/in/ketelynveiga/"
