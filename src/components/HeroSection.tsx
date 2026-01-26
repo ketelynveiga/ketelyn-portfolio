@@ -84,15 +84,17 @@ export const HeroSection = () => {
                   Email
                 </Button>
               </a>
-              <Button
-                variant="heroOutline"
-                size="lg"
-                className="gap-2"
-                onClick={() => scrollToSection("#experiencia")}
+              <a
+                href="/Ketelyn_Veiga_Product_Manager.pdf"
+                download="Ketelyn_Veiga_Product_Manager.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FileText size={18} />
-                Currículo
-              </Button>
+                <Button variant="heroOutline" size="lg" className="gap-2">
+                  <FileText size={18} />
+                  Currículo
+                </Button>
+              </a>
             </motion.div>
 
             {/* Scroll indicator */}
