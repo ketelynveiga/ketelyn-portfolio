@@ -129,11 +129,11 @@ export const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
-            <div className="relative w-80 md:w-[22rem] lg:w-[26rem] rounded-xl overflow-hidden">
+            <div className="relative w-72 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[28rem] rounded-2xl overflow-hidden bg-muted/20">
               <img
                 src={profileImage}
                 alt="Kételyn Veiga - Product Manager"
-                className="w-full h-auto object-contain grayscale-[10%] contrast-[0.95] brightness-[1.02]"
+                className="w-full h-full object-cover object-top grayscale-[10%] contrast-[0.95] brightness-[1.02]"
               />
             </div>
           </motion.div>
