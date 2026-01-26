@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail, FileText } from "lucide-react";
+import { ArrowDown, Linkedin, MessageCircle, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/ketelyn-profile.jpg";
 
@@ -78,10 +78,14 @@ export const HeroSection = () => {
                   LinkedIn
                 </Button>
               </a>
-              <a href="mailto:ketelynmveiga@gmail.com">
+              <a
+                href="https://wa.me/5522997657347"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="heroOutline" size="lg" className="gap-2">
-                  <Mail size={18} />
-                  Email
+                  <MessageCircle size={18} />
+                  WhatsApp
                 </Button>
               </a>
               <a
