@@ -19,13 +19,13 @@ export const HeroSection = () => {
       </div>
 
       <div className="container-custom relative z-10 py-24 md:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="order-2 lg:order-1"
+            className="order-2"
           >
             {/* Badge */}
             <motion.div
@@ -127,13 +127,13 @@ export const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="order-1 flex justify-center lg:justify-end"
           >
             <div className="relative flex items-start justify-center h-full">
               <img
                 src={profileImage}
                 alt="Kételyn Veiga - Product Manager"
-                className="w-auto max-w-[280px] md:max-w-[380px] lg:max-w-full h-auto max-h-[350px] md:max-h-[450px] lg:max-h-none rounded-2xl object-contain grayscale-[10%] contrast-[0.95] brightness-[1.02]"
+                className="w-auto max-w-[140px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-full h-auto rounded-2xl object-contain grayscale-[10%] contrast-[0.95] brightness-[1.02]"
               />
             </div>
           </motion.div>
