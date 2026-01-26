@@ -86,7 +86,6 @@ export const HeroSection = () => {
               </a>
               <a
                 href="/Ketelyn_Veiga_Product_Manager.pdf"
-                download="Ketelyn_Veiga_Product_Manager.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
