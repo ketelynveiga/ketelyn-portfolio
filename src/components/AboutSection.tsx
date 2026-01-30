@@ -12,9 +12,9 @@ const skills = [
   },
   {
     icon: Search,
-    title: "Discovery contínuo",
+    title: "Discovery orientado a dados",
     description:
-      "Conduzo processos de discovery e priorização orientada por métricas e evidências concretas.",
+      "Estruturo processos de discovery com entrevistas, análise quantitativa, experimentos e testes A/B para validar hipóteses e priorizar iniciativas com maior impacto em negócio e experiência do cliente.",
   },
   {
     icon: Users,
