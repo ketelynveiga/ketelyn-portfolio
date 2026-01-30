@@ -61,10 +61,11 @@ const experiences = [
       resultados: {
         title: "Resultados",
         items: [
-          "Redução de processos manuais na gestão de contas a receber",
-          "Maior previsibilidade de fluxo de caixa para clientes",
-          "Padronização e confiabilidade das integrações com ERPs",
-          "Evolução do produto como plataforma centralizadora de cobranças",
+          "Integrações com ERPs (Conta Azul e Omie) adotadas por aproximadamente 40% da base ativa, ampliando a automação financeira e reduzindo dependência de processos manuais",
+          "Automação da operação de cobrança e conciliação, resultando em 70% de redução no atraso médio dos pagamentos, 50% de redução na inadimplência e economia mensal de 100 horas operacionais para os times financeiros",
+          "Mais de 80% das sprints entregues conforme planejado, elevando previsibilidade, confiabilidade no delivery e alinhamento entre produto, engenharia e negócio",
+          "Aumento da taxa de conversão no onboarding por meio de experimentos contínuos, otimização de fluxos e decisões orientadas por dados",
+          "Reposicionamento estratégico do produto como hub central de cobranças, consolidando integrações financeiras e fortalecendo a proposta de valor para clientes B2B",
         ],
       },
     },
