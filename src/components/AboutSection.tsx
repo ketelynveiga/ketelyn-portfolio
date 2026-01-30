@@ -33,7 +33,7 @@ const tools = [
   "SQL",
   "Postman",
   "Swagger",
-  "IAs",
+  "Ferramentas de IA",
 ];
 
 const competencies = [
