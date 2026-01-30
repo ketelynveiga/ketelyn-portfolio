@@ -18,9 +18,9 @@ const skills = [
   },
   {
     icon: Users,
-    title: "Alinhamento de stakeholders",
+    title: "Alinhamento estratégico",
     description:
-      "Conecto stakeholders e time de tecnologia, traduzindo objetivos estratégicos em decisões claras, com comunicação assertiva e foco na execução.",
+      "Conecto stakeholders e engenharia para definir prioridades e roadmap, traduzindo objetivos estratégicos em decisões de produto orientadas por dados, escopo claro e impacto.",
   },
 ];
 
