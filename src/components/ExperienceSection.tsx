@@ -6,9 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Helper function to render text with numbers in bold
 const renderWithBoldNumbers = (text: string) => {
-  const parts = text.split(/(\d+%?)/g);
+  // Match numbers followed by optional % or common units
+  const parts = text.split(/(\d+(?:[.,]\d+)?%?)/g);
   return parts.map((part, index) => {
-    if (/^\d+%?$/.test(part)) {
+    if (/^\d+(?:[.,]\d+)?%?$/.test(part)) {
       return <strong key={index} className="font-bold text-foreground">{part}</strong>;
     }
     return part;
