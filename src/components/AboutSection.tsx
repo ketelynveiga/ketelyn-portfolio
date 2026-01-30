@@ -39,14 +39,14 @@ const tools = [
 const competencies = [
   "Product Discovery",
   "Priorização",
+  "Roadmap",
   "Gestão de backlog",
   "OKRs",
-  "Análise de dados",
-  "Métricas de produto",
+  "Métricas",
   "Testes A/B",
-  "Roadmap",
+  "Análise de dados",
   "Prototipagem",
-  "No-code / Low-code",
+  "No-code",
 ];
 
 const expectations = [
