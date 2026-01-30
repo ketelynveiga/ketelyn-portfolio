@@ -130,11 +130,11 @@ const experiences = [
       resultados: {
         title: "Resultados",
         items: [
-          "Reestruturação do site com melhoria da experiência de navegação e compra",
-          "Maior clareza entre jornadas B2C e B2B",
-          "Redução de fricções no processo de compra e checkout",
-          "Base digital preparada para escala e evolução do canal online",
-          "Melhor alinhamento entre áreas de negócio, produto e tecnologia",
+          "Evolução das jornadas digitais B2C e B2B, com melhoria da experiência de compra e redução de fricções no fluxo de checkout",
+          "Estruturação do processo de discovery e organização do backlog, aumentando a previsibilidade das entregas em aproximadamente 30%",
+          "Integrações técnicas com parceiros via APIs, conectando 4+ sistemas e ampliando a eficiência operacional",
+          "Evolução de fluxos financeiros end-to-end em ambiente enterprise, reduzindo retrabalho e impactando diretamente múltiplas áreas do negócio",
+          "Fortalecimento do alinhamento entre produto, engenharia e áreas de negócio, acelerando decisões e execução",
         ],
       },
     },
