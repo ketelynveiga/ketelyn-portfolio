@@ -100,7 +100,7 @@ export const AboutSection = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
           >
-            Atuo na interseção entre dados, integrações e produtos digitais, conectando estratégia e execução para transformar complexidade em decisões claras e soluções escaláveis para o negócio.
+            Atuo como Product Manager liderando discovery e delivery de produtos digitais, com foco em decisões orientadas por dados, priorização estratégica e execução consistente para gerar impacto real no negócio.
           </motion.p>
         </motion.div>
 
