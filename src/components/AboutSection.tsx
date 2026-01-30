@@ -54,19 +54,19 @@ const expectations = [
     icon: Lightbulb,
     title: "Trade-offs honestos",
     description:
-      "Comunicação objetiva sobre riscos, impactos e possibilidades, apoiando decisões conscientes.",
+      "Comunico riscos, impacto e viabilidade técnica de forma objetiva para apoiar priorizações conscientes e decisões de produto bem fundamentadas.",
   },
   {
     icon: BarChart3,
     title: "PRDs claros e objetivos",
     description:
-      "Documentação objetiva que guia times, alinha expectativas e orienta a execução.",
+      "Produzo documentação que orienta as squads, define escopo e critérios de aceitação e acelera a execução com qualidade.",
   },
   {
     icon: Puzzle,
     title: "Visão sistêmica",
     description:
-      "Entendimento do produto a partir dos objetivos do negócio, com decisões orientadas a impacto e sustentabilidade.",
+      "Analiso o produto de ponta a ponta, conectando objetivos de negócio, jornada do usuário e métricas para sustentar decisões de longo prazo.",
   },
 ];
 
