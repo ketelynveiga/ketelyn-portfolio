@@ -51,11 +51,12 @@ const experiences = [
       entregaveis: {
         title: "Entregáveis",
         items: [
-          "Roadmap de produto priorizado e orientado a resultados",
-          "PRDs claros, com critérios de aceitação e fluxos de integração",
-          "Especificações funcionais para automação de cobranças e conciliação",
-          "Fluxos de integração com ERPs e instituições financeiras",
-          "Dashboards de acompanhamento de métricas operacionais e de negócio",
+          "Roadmap estratégico priorizado com base em métricas de adoção, eficiência operacional e impacto financeiro, alinhado aos objetivos de negócio",
+          "PRDs completos com critérios de aceitação claros, fluxos de integração e requisitos funcionais para automação de cobranças, conciliação e APIs financeiras",
+          "Especificações funcionais e técnicas para integrações com ERPs (Conta Azul e Omie) e instituições financeiras, validadas em parceria com engenharia",
+          "Desenho e evolução dos fluxos de cobrança automatizada e reconciliação financeira, focados na redução de fricção operacional e aumento de conversão",
+          "Dashboards executivos de acompanhamento de KPIs operacionais e de negócio, suportando decisões contínuas de roadmap e priorização",
+          "Estruturação de processos de discovery contínuo, experimentação e testes A/B para validação de hipóteses antes do desenvolvimento",
         ],
       },
       resultados: {
