@@ -46,9 +46,9 @@ export const HeroSection = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-foreground leading-[1.1] mb-6"
             >
-              Transformando{" "}
-              <span className="text-gradient">dados e integrações</span>{" "}
-              em produtos financeiros
+              Conectando{" "}
+              <span className="text-gradient">dados, tecnologia e estratégia</span>{" "}
+              para criar produtos de alto impacto
             </motion.h1>
 
             {/* Subtitle */}
