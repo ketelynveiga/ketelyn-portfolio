@@ -36,6 +36,19 @@ const tools = [
   "IAs",
 ];
 
+const competencies = [
+  "Product Discovery",
+  "Priorização",
+  "Gestão de backlog",
+  "OKRs",
+  "Análise de dados",
+  "Métricas de produto",
+  "Testes A/B",
+  "Roadmap",
+  "Prototipagem",
+  "No-code / Low-code",
+];
+
 const expectations = [
   {
     icon: Lightbulb,
@@ -182,11 +195,61 @@ export const AboutSection = () => {
           </motion.div>
         </motion.div>
 
+        {/* Competencies Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-16 text-center"
+        >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.9, duration: 0.5 }}
+            className="inline-block mb-6"
+          >
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
+              🎯 Skills
+            </span>
+          </motion.div>
+
+          {/* Title */}
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 1.0, duration: 0.5 }}
+            className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-10"
+          >
+            Competências em Produto
+          </motion.h3>
+
+          {/* Competencies Pills */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 1.1, duration: 0.5 }}
+            className="flex flex-wrap justify-center gap-3"
+          >
+            {competencies.map((competency, index) => (
+              <motion.span
+                key={competency}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ delay: 1.1 + index * 0.05, duration: 0.3 }}
+                className="inline-flex items-center px-5 py-2.5 rounded-full bg-card text-foreground font-medium text-sm border border-border shadow-soft hover:shadow-hover transition-all duration-300"
+              >
+                {competency}
+              </motion.span>
+            ))}
+          </motion.div>
+        </motion.div>
+
         {/* What to Expect Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 1.0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
           className="mt-24"
         >
           {/* Header */}
@@ -195,7 +258,7 @@ export const AboutSection = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 1.1, duration: 0.5 }}
+              transition={{ delay: 1.3, duration: 0.5 }}
               className="inline-block mb-6"
             >
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
@@ -207,7 +270,7 @@ export const AboutSection = () => {
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 1.2, duration: 0.5 }}
+              transition={{ delay: 1.4, duration: 0.5 }}
               className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground"
             >
               O que esperar de mim
@@ -219,11 +282,11 @@ export const AboutSection = () => {
             {expectations.map((item, index) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
-                className="text-center"
-              >
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
+              className="text-center"
+            >
                 {/* Icon */}
                 <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6 mx-auto">
                   <item.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
