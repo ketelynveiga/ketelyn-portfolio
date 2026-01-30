@@ -434,7 +434,7 @@ export const ExperienceSection = () => {
             className="inline-block mb-6"
           >
             <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
-              Trajetória Profissional
+              Professional Journey
             </span>
           </motion.div>
 
