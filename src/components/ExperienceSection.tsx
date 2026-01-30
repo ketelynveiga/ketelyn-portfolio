@@ -136,7 +136,7 @@ const experiences = [
   },
   {
     company: "OMIE",
-    role: "Analista de Negócios",
+    role: "Product Owner",
     shortDescription:
       "produto digital B2B, conectando negócio, produto e tecnologia",
     tabs: {
