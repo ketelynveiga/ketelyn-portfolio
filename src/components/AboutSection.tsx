@@ -49,6 +49,14 @@ const competencies = [
   "No-code",
 ];
 
+const methodologies = [
+  "Scrum",
+  "Kanban",
+  "Agile",
+  "Dual Track",
+  "OKRs",
+];
+
 const expectations = [
   {
     icon: Lightbulb,
@@ -245,11 +253,61 @@ export const AboutSection = () => {
           </motion.div>
         </motion.div>
 
+        {/* Methodologies Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.0 }}
+          className="mt-16 text-center"
+        >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 1.1, duration: 0.5 }}
+            className="inline-block mb-6"
+          >
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
+              Workflow
+            </span>
+          </motion.div>
+
+          {/* Title */}
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 1.2, duration: 0.5 }}
+            className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-10"
+          >
+            Metodologias de trabalho
+          </motion.h3>
+
+          {/* Methodologies Pills */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 1.3, duration: 0.5 }}
+            className="flex flex-wrap justify-center gap-3"
+          >
+            {methodologies.map((methodology, index) => (
+              <motion.span
+                key={methodology}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ delay: 1.3 + index * 0.05, duration: 0.3 }}
+                className="inline-flex items-center px-5 py-2.5 rounded-full bg-card text-foreground font-medium text-sm border border-border shadow-soft hover:shadow-hover transition-all duration-300"
+              >
+                {methodology}
+              </motion.span>
+            ))}
+          </motion.div>
+        </motion.div>
+
         {/* What to Expect Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 1.2 }}
+          transition={{ duration: 0.6, delay: 1.4 }}
           className="mt-24"
         >
           {/* Header */}
@@ -258,7 +316,7 @@ export const AboutSection = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 1.3, duration: 0.5 }}
+              transition={{ delay: 1.5, duration: 0.5 }}
               className="inline-block mb-6"
             >
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm border border-primary/20">
@@ -270,7 +328,7 @@ export const AboutSection = () => {
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 1.4, duration: 0.5 }}
+              transition={{ delay: 1.6, duration: 0.5 }}
               className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground"
             >
               O que esperar de mim
@@ -284,7 +342,7 @@ export const AboutSection = () => {
                 key={item.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
+              transition={{ duration: 0.5, delay: 1.6 + index * 0.1 }}
               className="text-center"
             >
                 {/* Icon */}
