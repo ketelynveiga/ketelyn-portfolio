@@ -30,12 +30,14 @@ const experiences = [
       papel: {
         title: "Meu papel",
         items: [
-          "Definição e priorização de roadmap orientado a impacto de negócio e métricas",
-          "Liderança de integrações via API com ERPs (ex.: Omie, Conta Azul) e Open Finance",
-          "Atuação direta com CPTO e CEO na evolução estratégica do produto",
-          "Atuação direta com o time de engenharia na definição, evolução e validação das soluções",
+          "Condução das cerimônias do Scrum (Sprint Planning, Daily, Review e Retrospective), garantindo alinhamento contínuo entre produto, engenharia e stakeholders",
+          "Escrita, detalhamento e priorização dos cards no backlog, com histórias de usuário claras, critérios de aceitação bem definidos e alinhamento técnico prévio com engenharia para redução de retrabalho",
+          "Definição e priorização do roadmap orientadas a impacto de negócio e métricas de produto",
+          "Atuação direta com C-level (CEO e CPTO) na evolução estratégica do produto e definição de prioridades",
+          "Parceria próxima com o time de engenharia na definição, evolução e validação das soluções técnicas",
+          "Liderança de integrações via APIs com ERPs (Conta Azul e Omie) e iniciativas de Open Finance",
           "Criação de protótipos e definição de fluxos de experiência do usuário utilizando o Lovable",
-          "Tradução de necessidades financeiras complexas em soluções escaláveis e confiáveis",
+          "Tradução de necessidades financeiras complexas em soluções escaláveis, seguras e confiáveis",
         ],
       },
       processo: {
