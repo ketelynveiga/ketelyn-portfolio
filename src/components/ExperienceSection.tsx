@@ -120,11 +120,11 @@ const experiences = [
       entregaveis: {
         title: "Entregáveis",
         items: [
-          "Requisitos funcionais e não funcionais documentados",
-          "Histórias de usuário e critérios de aceitação detalhados no Jira",
-          "Documentação funcional e técnica no Confluence",
-          "Fluxos de navegação e jornadas de compra redesenhadas",
-          "Apoio a testes, homologação funcional e validação com áreas impactadas",
+          "Levantamento e documentação de requisitos funcionais e não funcionais para jornadas B2C e B2B e integrações técnicas",
+          "Histórias de usuário e critérios de aceitação detalhados no Jira, orientando squads e reduzindo retrabalho durante a execução",
+          "Documentação funcional e técnica no Confluence para suportar desenvolvimento, testes e rollout das iniciativas",
+          "Redesenho dos fluxos de navegação e jornadas de compra com foco em redução de fricção e melhoria da experiência do usuário",
+          "Apoio à homologação funcional e validações com áreas de negócio e tecnologia para garantir qualidade e alinhamento na entrega",
         ],
       },
       resultados: {
