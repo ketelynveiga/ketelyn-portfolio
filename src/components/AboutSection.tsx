@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Target, Search, Users, Lightbulb, BarChart3, Puzzle } from "lucide-react";
+import { Rocket, Search, Users, Lightbulb, BarChart3, Puzzle } from "lucide-react";
 
 const skills = [
   {
-    icon: Target,
-    title: "Produtos de alta confiabilidade",
+    icon: Rocket,
+    title: "Delivery e execução",
     description:
-      "Construo produtos digitais onde regras de negócio e confiabilidade são centrais para o sucesso da operação.",
+      "Conduzo squads multidisciplinares, organizo e priorizo backlog, escrevo histórias de usuário e critérios de aceitação e garanto previsibilidade nas entregas por meio de ritos ágeis e acompanhamento contínuo de métricas.",
   },
   {
     icon: Search,
