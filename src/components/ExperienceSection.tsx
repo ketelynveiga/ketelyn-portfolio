@@ -43,11 +43,12 @@ const experiences = [
       processo: {
         title: "Processo",
         items: [
-          "Discovery contínuo com entrevistas, análise de dados e feedbacks de clientes",
-          "Priorização baseada em impacto de negócio, esforço técnico e risco operacional",
-          "Definição clara de escopo por meio de PRDs e critérios de aceitação",
-          "Colaboração próxima com engenharia para decisões técnicas e de integração",
-          "Acompanhamento de métricas e iteração rápida após entregas",
+          "Discovery contínuo com entrevistas com clientes, análise quantitativa de dados e exploração de feedbacks para identificação de oportunidades de maior impacto",
+          "Priorização estruturada das iniciativas com base em impacto de negócio, esforço técnico e risco operacional, utilizando frameworks como RICE e Value vs. Effort",
+          "Definição clara de escopo por meio de PRDs completos, critérios de aceitação e alinhamentos técnicos prévios com engenharia",
+          "Colaboração próxima com engenharia para decisões arquiteturais e desenho de integrações via APIs com ERPs e parceiros financeiros",
+          "Execução iterativa com entregas incrementais, monitoramento contínuo de KPIs e ajustes rápidos após o lançamento",
+          "Realização de experimentos e testes A/B para validação de hipóteses e otimização de fluxos críticos da jornada do cliente",
         ],
       },
       entregaveis: {
