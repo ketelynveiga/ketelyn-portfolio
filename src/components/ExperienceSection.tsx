@@ -4,6 +4,17 @@ import { useRef, useState } from "react";
 import { Building2, ChevronDown } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+// Helper function to render text with numbers in bold
+const renderWithBoldNumbers = (text: string) => {
+  const parts = text.split(/(\d+%?)/g);
+  return parts.map((part, index) => {
+    if (/^\d+%?$/.test(part)) {
+      return <strong key={index} className="font-bold text-foreground">{part}</strong>;
+    }
+    return part;
+  });
+};
+
 const experiences = [
   {
     company: "KOLEK",
@@ -392,7 +403,7 @@ const ExperienceCard = ({ experience, index, isInView }: ExperienceCardProps) =>
                 {experience.tabs.resultados.items.map((item, i) => (
                   <li key={i} className="text-muted-foreground flex items-start gap-2">
                     <span className="w-1 h-1 rounded-full bg-muted-foreground mt-2 flex-shrink-0" />
-                    {item}
+                    {renderWithBoldNumbers(item)}
                   </li>
                 ))}
               </ul>
