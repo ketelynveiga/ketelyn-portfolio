@@ -148,15 +148,15 @@ const experiences = [
       contexto: {
         title: "Problema de negócio",
         content:
-          "A Omie operava produtos digitais B2B críticos para a gestão empresarial, com alta dependência de dados, integrações e processos bem definidos. O desafio era garantir que necessidades complexas de negócio fossem corretamente compreendidas, priorizadas e traduzidas em soluções funcionais, mantendo a evolução contínua do produto sem comprometer estabilidade e qualidade.",
+          "A Omie atua como uma plataforma ERP B2B voltada à gestão financeira e operacional de pequenas e médias empresas, com forte dependência de integrações sistêmicas entre módulos como CRM, faturamento, financeiro e estoque. O desafio principal do período foi elevar a confiabilidade das integrações internas, melhorar a previsibilidade da evolução do produto e reduzir retrabalho causado por requisitos pouco claros e desalinhamento entre áreas técnicas e de negócio. Além disso, havia a necessidade de fortalecer a tomada de decisão baseada em dados e estruturar melhor os processos de discovery e priorização, garantindo que as iniciativas do roadmap estivessem alinhadas à estratégia da empresa e às dores reais dos clientes.",
         users: [
-          "Clientes B2B da plataforma",
+          "Clientes B2B da plataforma (PMEs)",
           "Times internos de produto, engenharia e suporte",
           "Áreas de negócio e operações",
         ],
         restrictions: [
-          "Sistemas críticos com alto impacto operacional",
-          "Dependência de dados consistentes e integrações confiáveis",
+          "Integrações sistêmicas entre módulos críticos do ERP",
+          "Dependência de dados consistentes e confiáveis",
           "Necessidade de clareza e rastreabilidade de requisitos",
           "Ambiente de evolução contínua com demandas concorrentes",
         ],
