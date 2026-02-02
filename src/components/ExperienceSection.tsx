@@ -172,11 +172,12 @@ const experiences = [
       processo: {
         title: "Processo",
         items: [
-          "Mapeamento de necessidades junto a clientes e stakeholders internos",
-          "Análise e priorização de demandas considerando impacto, viabilidade técnica e valor de negócio",
-          "Estruturação e validação de requisitos com times de produto e engenharia",
-          "Uso de SQL e análise exploratória de dados para validar hipóteses e identificar causas raiz",
-          "Participação ativa em rituais ágeis para alinhamento contínuo e acompanhamento das entregas",
+          "Condução de Product Discovery estruturado, com levantamento de problemas junto a clientes e áreas internas, formulação de hipóteses e definição de métricas de sucesso para cada iniciativa",
+          "Análise recorrente de dados via SQL e dashboards operacionais para identificação de gargalos, priorização de oportunidades e investigação de incidentes",
+          "Validação técnica das integrações sistêmicas entre módulos do ERP em parceria com engenharia, assegurando consistência de dados e confiabilidade operacional",
+          "Estruturação e manutenção contínua do backlog, utilizando critérios de valor para o negócio, impacto ao cliente e viabilidade técnica",
+          "Escrita de histórias de usuário e critérios de aceitação em BDD, garantindo clareza de escopo e alinhamento entre times",
+          "Rituais ágeis recorrentes (refinamentos, plannings, reviews e retrospectives) para assegurar previsibilidade no delivery e evolução contínua do produto",
         ],
       },
       entregaveis: {
