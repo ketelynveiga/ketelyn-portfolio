@@ -110,11 +110,11 @@ const experiences = [
       processo: {
         title: "Processo",
         items: [
-          "Levantamento e validação de requisitos junto a stakeholders de negócio e tecnologia",
-          "Mapeamento de jornadas de compra end-to-end, identificando gargalos e oportunidades",
-          "Redefinição de fluxos de navegação, checkout e regras comerciais",
-          "Priorização considerando impacto no negócio, esforço técnico e riscos operacionais",
-          "Acompanhamento das entregas em rituais ágeis, garantindo alinhamento contínuo",
+          "Condução de Product Discovery com mapeamento de jornadas, definição de problemas prioritários e hipóteses orientadas a métricas",
+          "Análise de dados de funil e comportamento do usuário para identificação de gargalos em checkout e fluxos de pagamento",
+          "Priorização contínua do backlog utilizando critérios de impacto, esforço e retorno financeiro",
+          "Validação técnica de integrações via APIs em parceria com engenharia e fornecedores externos",
+          "Escrita de histórias de usuário e critérios de aceitação em BDD e acompanhamento do delivery por meio de ritos ágeis",
         ],
       },
       entregaveis: {
