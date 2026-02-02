@@ -184,12 +184,12 @@ const experiences = [
       entregaveis: {
         title: "Entregáveis",
         items: [
-          "Requisitos funcionais e não funcionais documentados e validados",
-          "Histórias de usuário e critérios de aceitação estruturados (BDD)",
-          "Documentação funcional e técnica no Confluence",
-          "Gestão de backlog e acompanhamento de entregas no Jira",
-          "Mapas de jornada e fluxos de negócio no Miro",
-          "Protótipos funcionais no Figma para validação de fluxos",
+          "Requisitos funcionais e não funcionais estruturados e validados junto às áreas técnicas e de negócio, garantindo clareza de escopo e redução de retrabalho",
+          "Histórias de usuário e critérios de aceitação definidos em BDD, promovendo alinhamento entre produto, engenharia e stakeholders",
+          "Documentação funcional e técnica centralizada no Confluence, assegurando rastreabilidade das decisões e evolução contínua do produto",
+          "Gestão ativa do backlog e acompanhamento das entregas no Jira, com foco em priorização orientada a valor e impacto no negócio",
+          "Mapas de jornada do usuário e fluxos de negócio elaborados no Miro para suportar iniciativas de discovery e redesenho de processos",
+          "Protótipos funcionais no Figma utilizados para validação antecipada de soluções e mitigação de riscos antes do desenvolvimento",
         ],
       },
       resultados: {
