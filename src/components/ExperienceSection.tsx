@@ -164,11 +164,9 @@ const experiences = [
       papel: {
         title: "Meu papel",
         items: [
-          "Atuação como Analista de Negócios em produto digital B2B",
-          "Tradução de objetivos estratégicos em requisitos funcionais e não funcionais",
-          "Interface entre clientes, negócio, produto e tecnologia, garantindo alinhamento e clareza",
-          "Apoio à tomada de decisão por meio de análise de dados e evidências",
-          "Contribuição direta para a evolução e sustentação de sistemas críticos",
+          "Atuei como Product Owner responsável pela tradução das necessidades de clientes e áreas internas em requisitos claros e priorizados, apoiando a definição da estratégia do produto e a evolução contínua do roadmap",
+          "Fui responsável por conduzir atividades de Product Discovery, análise de dados com SQL, investigação de incidentes e validação de hipóteses, garantindo decisões orientadas por métricas e evidências",
+          "Trabalhei de forma próxima com engenharia, design e áreas de negócio na definição e validação de integrações sistêmicas entre módulos do ERP, assegurando consistência de dados e estabilidade operacional",
         ],
       },
       processo: {
