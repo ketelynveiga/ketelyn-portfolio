@@ -195,11 +195,11 @@ const experiences = [
       resultados: {
         title: "Resultados",
         items: [
-          "Maior clareza e previsibilidade na evolução do produto",
-          "Redução de retrabalho por meio de requisitos bem definidos e alinhados",
-          "Apoio efetivo à tomada de decisão com base em dados",
-          "Melhoria na eficiência operacional de sistemas CRM integrados",
-          "Fortalecimento da integração entre negócio, produto e tecnologia",
+          "Aumento de aproximadamente 25% na previsibilidade da evolução do produto após a padronização do processo de discovery e priorização do backlog",
+          "Redução estimada de 30% no retrabalho por meio da definição clara de requisitos funcionais e não funcionais e alinhamento contínuo entre áreas técnicas e de negócio",
+          "Ampliação da tomada de decisão orientada a dados, com uso recorrente de SQL e dashboards, contribuindo para redução de cerca de 20% no tempo médio de resolução de incidentes",
+          "Melhoria de aproximadamente 20% na eficiência operacional dos fluxos entre módulos de CRM integrados por meio da evolução das integrações sistêmicas",
+          "Fortalecimento da integração entre negócio, produto e tecnologia, refletido em ciclos de entrega mais rápidos e maior confiabilidade das iniciativas estratégicas",
         ],
       },
     },
