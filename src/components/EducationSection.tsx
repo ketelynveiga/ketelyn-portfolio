@@ -3,11 +3,18 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, Award } from "lucide-react";
 
-const education = {
-  degree: "Engenharia de Software",
-  institution: "Universidade Candido Mendes",
-  status: "em andamento",
-};
+const educations = [
+  {
+    degree: "Análise e Desenvolvimento de Sistemas",
+    institution: null,
+    status: "concluído",
+  },
+  {
+    degree: "Engenharia de Software",
+    institution: "Universidade Candido Mendes",
+    status: "em andamento",
+  },
+];
 
 const certifications = [
   { name: "Product Management", institution: "PM3" },
@@ -57,14 +64,22 @@ export const EducationSection = () => {
                 Formação Acadêmica
               </h3>
             </div>
-            <div>
-              <p className="text-foreground font-medium text-lg mb-1">
-                {education.degree}
-              </p>
-              <p className="text-muted-foreground">
-                {education.institution} ({education.status})
-              </p>
-            </div>
+            <ul className="space-y-4">
+              {educations.map((edu, index) => (
+                <motion.li
+                  key={edu.degree}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
+                  className="border-b border-border pb-3 last:border-0 last:pb-0"
+                >
+                  <p className="text-foreground font-medium">{edu.degree}</p>
+                  <p className="text-muted-foreground text-sm">
+                    {edu.institution ? `${edu.institution} (${edu.status})` : edu.status}
+                  </p>
+                </motion.li>
+              ))}
+            </ul>
           </motion.div>
 
           {/* Certifications */}
