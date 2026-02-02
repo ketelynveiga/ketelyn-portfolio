@@ -6,7 +6,7 @@ import { GraduationCap, Award } from "lucide-react";
 const educations = [
   {
     degree: "Análise e Desenvolvimento de Sistemas",
-    institution: null,
+    institution: "Universidade Candido Mendes",
     status: "concluído",
   },
   {
