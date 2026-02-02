@@ -9,8 +9,14 @@ const education = {
 };
 
 const certifications = [
-  { name: "Product Manager", institution: "PM3" },
+  { name: "Product Management", institution: "PM3" },
   { name: "AI Product Specialist", institution: "PM3" },
+  { name: "Product Discovery", institution: "PM3" },
+  { name: "Product Growth", institution: "PM3" },
+  { name: "Product Leadership", institution: "PM3" },
+  { name: "Product Analytics", institution: "PM3" },
+  { name: "Product Design", institution: "PM3" },
+  { name: "Analista de Dados: da ferramenta à estratégia", institution: "PM3" },
 ];
 
 export const EducationSection = () => {
