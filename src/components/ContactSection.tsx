@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Localização",
-    value: "Rio de Janeiro, Brasil",
+    value: "Rio de Janeiro, Brasil — Disponível para realocação",
     href: null,
   },
 ];
