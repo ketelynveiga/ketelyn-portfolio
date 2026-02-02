@@ -83,17 +83,17 @@ const experiences = [
       contexto: {
         title: "Problema de negócio",
         content:
-          "Um supermercado atacadista enfrentava limitações em seu site, que não atendia adequadamente às diferentes jornadas de clientes B2C e B2B, dificultando navegação, conversão e escalabilidade do negócio digital. O desafio era reestruturar o site de ponta a ponta, alinhando experiência do usuário, regras comerciais, meios de pagamento e integrações técnicas às necessidades do negócio atacadista.",
+          "A Stoom operava com jornadas digitais B2C e B2B que apresentavam fricções relevantes no processo de compra e pagamento, além de dependência crescente de integrações técnicas com parceiros externos. O principal desafio era redesenhar a experiência de ponta a ponta, estruturar o processo de Product Discovery e elevar a maturidade de priorização do backlog, garantindo previsibilidade no delivery e maior eficiência operacional. Havia ainda a necessidade de evoluir fluxos financeiros enterprise e ampliar a automação por meio de integrações sistêmicas, conectando múltiplos sistemas ao ecossistema do produto.",
         users: [
           "Clientes finais (B2C)",
           "Clientes corporativos e compradores recorrentes (B2B)",
           "Times internos de comercial, marketing, operações e tecnologia",
         ],
         restrictions: [
-          "Regras comerciais distintas entre B2C e B2B",
-          "Jornadas críticas de compra e pagamento",
-          "Dependência de integrações técnicas com sistemas internos",
-          "Necessidade de garantir performance, estabilidade e escalabilidade",
+          "Fricções nas jornadas de compra e pagamento",
+          "Dependência de integrações técnicas com parceiros externos",
+          "Fluxos financeiros enterprise complexos",
+          "Necessidade de previsibilidade no delivery",
           "Operação de alto volume e impacto direto em faturamento",
         ],
       },
