@@ -100,11 +100,11 @@ const experiences = [
       papel: {
         title: "Meu papel",
         items: [
-          "Atuação como Product Owner responsável pela reestruturação completa do site e das jornadas B2C e B2B",
-          "Tradução de objetivos de negócio em requisitos funcionais e não funcionais, alinhando estratégia, experiência do usuário e viabilidade técnica",
-          "Interface contínua entre negócio, design e engenharia para garantir alinhamento, velocidade e qualidade na execução",
-          "Definição e priorização do backlog com foco em conversão, eficiência operacional e valor para o cliente",
-          "Apoio à tomada de decisão em jornadas críticas de compra e pagamento, orientando trade-offs e escopo das iniciativas",
+          "Atuação como Product Owner responsável pela reestruturação completa do site e das jornadas B2C e B2B, com foco em conversão, eficiência operacional e escalabilidade",
+          "Tradução de objetivos estratégicos do negócio em requisitos funcionais e não funcionais, equilibrando experiência do usuário, viabilidade técnica e impacto financeiro",
+          "Interface contínua entre negócio, design e engenharia para garantir alinhamento, velocidade de execução e qualidade nas entregas",
+          "Definição e priorização do backlog com foco em valor para o cliente, impacto em métricas críticas e retorno para o negócio",
+          "Apoio à tomada de decisão em jornadas críticas de compra e pagamento, conduzindo análises de trade-offs e definição de escopo das iniciativas",
         ],
       },
       processo: {
