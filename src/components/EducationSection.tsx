@@ -4,8 +4,9 @@ import { useRef } from "react";
 import { GraduationCap, Award } from "lucide-react";
 
 const education = {
-  degree: "Análise e Desenvolvimento de Sistemas",
-  level: "Ensino Superior completo",
+  degree: "Engenharia de Software",
+  institution: "Universidade Candido Mendes",
+  status: "em andamento",
 };
 
 const certifications = [
@@ -60,7 +61,9 @@ export const EducationSection = () => {
               <p className="text-foreground font-medium text-lg mb-1">
                 {education.degree}
               </p>
-              <p className="text-muted-foreground">{education.level}</p>
+              <p className="text-muted-foreground">
+                {education.institution} ({education.status})
+              </p>
             </div>
           </motion.div>
 
