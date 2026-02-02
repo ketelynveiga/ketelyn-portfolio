@@ -143,7 +143,7 @@ const experiences = [
     company: "OMIE",
     role: "Product Owner",
     shortDescription:
-      "produto digital B2B, conectando negócio, produto e tecnologia",
+      "produto ERP B2B, focado em integrações sistêmicas, eficiência operacional e evolução de processos financeiros",
     tabs: {
       contexto: {
         title: "Problema de negócio",
