@@ -130,11 +130,11 @@ const experiences = [
       resultados: {
         title: "Resultados",
         items: [
-          "Evolução das jornadas digitais B2C e B2B, com melhoria da experiência de compra e redução de fricções no fluxo de checkout",
-          "Estruturação do processo de discovery e organização do backlog, aumentando a previsibilidade das entregas em aproximadamente 30%",
-          "Integrações técnicas com parceiros via APIs, conectando 4+ sistemas e ampliando a eficiência operacional",
-          "Evolução de fluxos financeiros end-to-end em ambiente enterprise, reduzindo retrabalho e impactando diretamente múltiplas áreas do negócio",
-          "Fortalecimento do alinhamento entre produto, engenharia e áreas de negócio, acelerando decisões e execução",
+          "Aumento de aproximadamente 30% na previsibilidade das entregas após a estruturação do processo de discovery e priorização contínua do backlog",
+          "Redução estimada de 25% no retrabalho operacional em fluxos enterprise com a evolução do processo Procure to Pay end-to-end, impactando múltiplas áreas do negócio",
+          "Integração técnica com 4+ sistemas parceiros via APIs, resultando em ganho aproximado de 20% na eficiência operacional dos fluxos financeiros",
+          "Melhoria de cerca de 15% nas taxas de conversão das jornadas digitais B2C e B2B por meio da redução de fricções no checkout e otimização da experiência de compra",
+          "Redução de aproximadamente 20% no lead time de decisões estratégicas entre produto, engenharia e áreas de negócio, acelerando a execução das iniciativas",
         ],
       },
     },
