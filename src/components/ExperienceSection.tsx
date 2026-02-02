@@ -120,11 +120,12 @@ const experiences = [
       entregaveis: {
         title: "Entregáveis",
         items: [
-          "Levantamento e documentação de requisitos funcionais e não funcionais para jornadas B2C e B2B e integrações técnicas",
-          "Histórias de usuário e critérios de aceitação detalhados no Jira, orientando squads e reduzindo retrabalho durante a execução",
-          "Documentação funcional e técnica no Confluence para suportar desenvolvimento, testes e rollout das iniciativas",
-          "Redesenho dos fluxos de navegação e jornadas de compra com foco em redução de fricção e melhoria da experiência do usuário",
-          "Apoio à homologação funcional e validações com áreas de negócio e tecnologia para garantir qualidade e alinhamento na entrega",
+          "Roadmap e backlog priorizados para as jornadas B2C e B2B e frentes de integrações técnicas",
+          "Histórias de usuário e critérios de aceitação estruturados em BDD no Jira, com foco em redução de ambiguidade e aceleração da execução dos squads",
+          "Documentação funcional e técnica das iniciativas no Confluence, suportando desenvolvimento, testes e rollout em produção",
+          "Mapas de jornada e redesenho completo dos fluxos de compra e checkout, com foco em redução de fricção e aumento de conversão",
+          "Protótipos navegáveis para validação antecipada de soluções junto a stakeholders e times técnicos",
+          "Planejamento e acompanhamento das homologações funcionais e validações finais com áreas de negócio e tecnologia",
         ],
       },
       resultados: {
